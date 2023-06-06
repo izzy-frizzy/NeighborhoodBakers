@@ -20,10 +20,7 @@ function Sidenav() {
   return (
     <div className={`sidenav ${isOpen ? 'open' : ''}`}>
 
-      <img className='sidenav_logo'
-        src="https://www.pngkey.com/png/detail/53-534954_croissant-bake-bakery-bread-comments-gulf-asian-english.png"
-        //src = "logo/logo-color.jpeg" 
-        alt="Neighborhood Bakers" />
+      <span className='sidenav_logo'> Neighborhood Bakers</span>
 
       <div className='sidenav_more'>
         <button className='sidenav_button' onClick={toggleSidebar}>
