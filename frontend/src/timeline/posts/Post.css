@@ -1,0 +1,53 @@
+.posts{
+    width: 550px;
+    margin: 30px 40px 50px 40px;
+}
+
+.post_header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.post_headerAuther {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.post_headerAuther > span {
+    color: gray;
+    font-size: 15px;
+}
+
+.post_image > img {
+    width: 100%;
+    border-radius: 6px;
+    border: 0.6px solid black;
+}
+
+/*rgba(20, 20, 20, 0.14) if I ever add a dark mode that changes to brown i could use this*/
+
+.post_footer {
+    padding-bottom: 6px;
+}
+
+.post_footerIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postIcon {
+    padding: 7px;
+    font-size: 30px;
+}
+
+.postIcon:hover {
+    cursor: pointer;
+}
