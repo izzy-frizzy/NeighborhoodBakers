@@ -28,10 +28,13 @@ function Timeline() {
   return (
     <div className = 'timeline'>
        <div className = 'timeline_left'>
-      
         <div className = 'timeline_posts'>
           {posts.map(post => (
-            <Post />
+            <Post user = {post.user} 
+            postImage = {post.postImage}
+            likes = {post.likes}
+            timestamp = {post.timestamp}
+            />
             ))}
 
         </div>

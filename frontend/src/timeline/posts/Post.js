@@ -7,13 +7,13 @@ import ReviewsIcon from '@mui/icons-material/Reviews'; // comments on posts
 import NearMeOutlinedIcon from '@mui/icons-material/NearMeOutlined'; // share button on posts
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder'; //save button on posts
 
-function Post() {
+function Post({user, postImage, likes, timestamp}) {
   return (
     <div className='posts'>
       <div className='post_header'>
         <div className='post_headerAuther'>
-          <Avatar>frizzy</Avatar>
-          default_username • <span>12hr</span>
+          <Avatar>{user.charAt(0).toUpperCase()}</Avatar>
+          {user} • <span>{timestamp}</span>
 
         </div>
 
@@ -22,7 +22,7 @@ function Post() {
       </div>
 
       <div className='post_image'>
-        <img src="https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/story/how-sweet-it.jpg?itok=IOyK92Fc"
+        <img src= {postImage}
           alt=""
         />
       </div>
@@ -38,7 +38,7 @@ function Post() {
           </div>
 
         </div>
-        liked by 21 people
+        liked by {likes} people
       </div>
     </div>
   )
