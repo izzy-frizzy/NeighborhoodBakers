@@ -20,7 +20,7 @@ function Sidenav() {
   return (
     <div className={`sidenav ${isOpen ? 'open' : ''}`}>
 
-      <span className='sidenav_logo'> Neighborhood Bakers</span>
+      <span className='sidenav_logo'>Neighborhood Bakers</span>
 
       <div className='sidenav_more'>
         <button className='sidenav_button' onClick={toggleSidebar}>
